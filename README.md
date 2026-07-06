@@ -22,7 +22,7 @@ This project builds a merchant-centric analytics pipeline that aggregates raw tr
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Dataset:** PaySim Mobile Money Transactions
 - **Records:** 6,362,620+
@@ -31,7 +31,7 @@ This project builds a merchant-centric analytics pipeline that aggregates raw tr
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - PostgreSQL
 - SQL
@@ -41,7 +41,7 @@ This project builds a merchant-centric analytics pipeline that aggregates raw tr
 
 ---
 
-## 🗺 Project Roadmap
+## Project Roadmap
 
 - ✅ Phase 1 – Database Profiling & Environment Setup
 - ✅ Phase 2 – Schema Verification & Data Mapping
@@ -51,7 +51,7 @@ This project builds a merchant-centric analytics pipeline that aggregates raw tr
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Merchant-Risk-Analytics
@@ -66,6 +66,20 @@ Merchant-Risk-Analytics
 
 ---
 
-## 🚀 Current Status
+##  Current Status
 
-Currently implementing the merchant-level feature engineering pipeline that converts transaction-level data into business-ready analytical metrics.
+### Completed
+- ✅ Phase 1 – Database Profiling & Environment Setup
+- ✅ Phase 2 – Schema Verification & Data Mapping
+
+### In Progress
+- Phase 3 – Feature Engineering & Aggregation
+
+### Key Findings
+
+- Verified the source and destination schemas.
+- Confirmed that merchant destinations (`nameDest`) are represented by IDs prefixed with `M`.
+- Discovered that merchant entities in the PaySim dataset are highly sparse, with most merchants appearing only once.
+- Identified a potential limitation in using PaySim for merchant-level behavioral analytics, which will be evaluated before proceeding with feature engineering.
+
+> **Note:** Data validation is an essential part of analytics. Understanding dataset limitations before building models ensures the final solution reflects real-world behavior rather than assumptions.
